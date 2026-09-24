@@ -1,26 +1,32 @@
 # LinkedIn launch post
 
-I’m excited to share a new portfolio project I built: **AI Finance Operations Agent** 🚀
+🚀 I’ve built and deployed an **AI Finance Operations Agent**.
 
-The project explores how AI and data automation can be combined to streamline invoice operations.
+The project explores how GenAI, deterministic business rules, and analytics can work together to automate a common finance workflow: invoice processing.
 
-**What it does:**
-- Extracts structured fields from invoice PDFs
-- Uses Gemini for AI-assisted extraction
-- Falls back to deterministic parsing when AI is unavailable or quota-limited
-- Validates invoice totals
-- Detects potential duplicate invoices
-- Flags unusual vendor spending
-- Assigns invoice risk levels
-- Stores processed results for analysis
-- Presents finance KPIs and trends through a Streamlit dashboard
+### What it does
 
-**Tech stack:** Python, Streamlit, Pandas, Pydantic, PyPDF and Google Gemini.
+📄 Extracts structured fields from invoice PDFs  
+🤖 Uses Google Gemini for AI-assisted extraction  
+🛡️ Falls back to deterministic parsing when AI is unavailable  
+✅ Validates invoice totals independently  
+🔁 Detects potential duplicate invoices  
+📊 Flags unusual vendor spending  
+⚠️ Assigns invoice risk levels  
+📈 Presents finance KPIs and trends in a Streamlit dashboard
 
-One of the main design goals was not to rely blindly on an LLM: the extracted data is independently validated and checked against business rules and historical vendor data.
+The demo dataset contains **7 invoices**, including examples of valid invoices, an invalid total, a duplicate invoice, and an unusually high vendor invoice.
 
-Live Demo: https://ai-finance-operations-agent-thkprarbd4kpd38cbba2qg.streamlit.app/
+One design principle I focused on was **not relying blindly on an LLM**. AI is used for extraction, while business rules independently validate the resulting data.
 
-GitHub: https://github.com/akkisakpal/AI-Finance-Operations-Agent
+### Tech stack
 
-#Python #AI #DataAnalytics #MachineLearning #GenAI #Streamlit #DataEngineering #FinanceAutomation #GitHub
+Python | Streamlit | Pandas | Pydantic | PyPDF | Google Gemini
+
+🌐 **Live Demo:** https://ai-finance-operations-agent-thkprarbd4kpd38cbba2qg.streamlit.app/
+
+💻 **GitHub:** https://github.com/akkisakpal/AI-Finance-Operations-Agent
+
+This project builds on my interest in **AI, data analytics, anomaly detection, and data engineering**, while focusing on a practical business workflow.
+
+#Python #AI #GenAI #DataAnalytics #MachineLearning #Streamlit #DataEngineering #FinanceAutomation #GitHub
