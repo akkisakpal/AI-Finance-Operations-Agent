@@ -19,6 +19,8 @@ The project explores how AI and data automation can be combined to streamline in
 
 One of the main design goals was not to rely blindly on an LLM: the extracted data is independently validated and checked against business rules and historical vendor data.
 
+Live Demo: https://ai-finance-operations-agent-thkprarbd4kpd38cbba2qg.streamlit.app/
+
 GitHub: https://github.com/akkisakpal/AI-Finance-Operations-Agent
 
 #Python #AI #DataAnalytics #MachineLearning #GenAI #Streamlit #DataEngineering #FinanceAutomation #GitHub
