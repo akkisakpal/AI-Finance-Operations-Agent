@@ -2,17 +2,11 @@ name: Project Check
 
 on:
   push:
-    paths:
-      - 'projects/AI-Finance-Operations-Agent/**'
-      - '.github/workflows/project-check.yml'
   pull_request:
 
 jobs:
   check:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: projects/AI-Finance-Operations-Agent
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
