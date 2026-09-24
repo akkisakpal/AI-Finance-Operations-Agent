@@ -63,6 +63,11 @@ def fallback(t):
 try:
     from google import genai
     key=os.environ.get('GEMINI_API_KEY')
+    if not key:
+        try:
+            key=st.secrets.get('GEMINI_API_KEY')
+        except Exception:
+            key=None
     client=genai.Client(api_key=key) if key else None
 except Exception: client=None
 
