@@ -6,7 +6,7 @@ AI-assisted invoice processing and finance analytics portfolio project.
 
 ## 🌐 Live Demo
 
-**Streamlit app:** _Deploying — link will be added after the first successful deployment._
+**[🚀 Launch Live Demo](https://ai-finance-operations-agent-thkprarbd4kpd38cbba2qg.streamlit.app/)**
 
 ## Workflow
 
