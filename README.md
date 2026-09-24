@@ -85,6 +85,18 @@ The repository includes a seven-invoice demo dataset covering:
 - vendor spending anomalies
 - multiple risk levels
 
+## Demo results
+
+The included demo dataset contains **7 invoices** with **3 requiring review**, including:
+
+- 1 vendor-spending anomaly
+- 1 potential duplicate
+- 1 invoice with an invalid total
+- Low, Medium and High risk examples
+- €20,511.50 total demo invoice value
+
+These examples are included to demonstrate how the validation and risk rules behave across different invoice conditions.
+
 ## CI
 
 GitHub Actions runs a Python syntax check and dataset tests on repository changes.
